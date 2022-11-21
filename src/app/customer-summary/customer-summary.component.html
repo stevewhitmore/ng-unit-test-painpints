@@ -1,0 +1,7 @@
+<ng-container *ngIf="customerData$ | async as customerData">
+    <p>{{customerData.firstName}} {{customerData.lastName}}</p>
+    <p><strong>Email:</strong> {{customerData.email}}</p>
+    <p><strong>Phone:</strong> {{customerData.phone}}</p>
+    <p><strong>Member since:</strong> {{customerData.memberSince}}</p>
+</ng-container>
+<button type="button" (click)="thing()">click me</button>
